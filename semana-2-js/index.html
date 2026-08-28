@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reto semana 2 — menú con secciones</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+<button id="boton-menu" class="boton-menu" aria-label="Abrir menú">
+  <span></span><span></span><span></span>
+</button>
+
+<aside id="barra-lateral" class="barra-lateral">
+  <nav>
+    <a href="#" class="enlace-barra activo" data-vista="vista-uno">Sección 1</a>
+    <a href="#" class="enlace-barra" data-vista="vista-dos">Sección 2</a>
+  </nav>
+</aside>
+
+<div id="fondo-barra" class="fondo-barra"></div>
+
+<main>
+  <div id="vista-uno" class="vista">
+    <h1>Sección 1</h1>
+    <p>Contenido de la primera opción.</p>
+  </div>
+  <div id="vista-dos" class="vista oculto">
+    <h1>Sección 2</h1>
+    <p>Contenido de la segunda opción.</p>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
